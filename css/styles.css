@@ -1,0 +1,176 @@
+/*CSS Positioning Rules ->
+1) Content is everything - Determines size of boxes
+2) Order of elements comes from HTML code
+3) Children sit on Parent elements - if h1 is inside div, h1 is Child
+
+The Position property -
+1> Static - Default - Go along with default HTML rules and flow
+2> Relative - Position element relative to where it would have been if Static.
+If element is moved, it may overlap with nearby elements
+eg. img {
+position: relative;
+left: 30px;  Can also be top, bottom, right
+}  Moves image 30px to the left from where it's left edge would be with
+default positioning
+3> Absolute - Move element relative to its Parent - Affects flow of code
+*/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+a {
+  color: #11999E;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+h1 {
+  margin: 50px auto 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #66BFBF;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding: 20px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  line-height: 2;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 25%;
+  bottom: 300px;
+}
+
+.bottom-container {
+  margin: 30px auto 0;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4ED);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4ED);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4ED);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4ED);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4ED);
+  text-decoration: none;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.description {
+  width: 30%;
+  margin: auto;
+}
+
+.footy-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.programmer {
+  font-weight: normal;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skill-row {
+  margin: 100px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 25%;
+  top: 50px;
+}
+
+.trademark {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.video-game {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+/*
+.skill-para {
+  clear: left;
+}
+
+.skill-para2 {
+  clear: right;
+}
+*/
